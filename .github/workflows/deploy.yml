@@ -1,0 +1,26 @@
+name: Deploy React to cPanel
+on:
+  push:
+    branches:
+      - main  # Ganti dengan 'master' jika branch utama Anda master
+
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      
+    - name: Install and Build
+      run: |
+        npm install
+        npm run build
+        
+    - name: FTP Deploy
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./dist/ # PENTING: Cek folder build Anda. Vite pakai './dist/', CRA pakai './build/'
+        server-dir: ./ # Ini akan upload ke root folder FTP yang Anda set di cPanel
