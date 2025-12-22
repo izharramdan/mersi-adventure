@@ -1,0 +1,7 @@
+{
+  "name": "Mersi Adventure - Pangalengan Travel Hub",
+  "description": "A premium travel and outdoor adventure platform for Pangalengan, featuring rafting, camping, and off-road experiences with AI-powered trip planning.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
