@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section id="home" className="relative h-screen min-h-[750px] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen min-h-[800px] flex flex-col items-center overflow-hidden">
       {/* Background Layers */}
       {slides.map((slide, index) => (
         <div 
@@ -52,12 +52,12 @@ const Hero: React.FC = () => {
         </div>
       ))}
 
-      <div className="container mx-auto px-6 z-10">
+      <div className="container mx-auto px-6 z-10 flex-grow flex flex-col justify-center pt-24">
         <div className="max-w-4xl">
           <div className="inline-flex items-center gap-3 px-5 py-2.5 bg-white/10 backdrop-blur-xl rounded-full mb-8 border border-white/20">
             <span className="w-2 h-2 bg-orange-500 rounded-full animate-ping"></span>
             <span className="text-white font-bold uppercase tracking-[0.3em] text-[10px]">
-              {slides[currentSlide].label} • PANGALENGAN EXPERT
+              {slides[currentSlide].label} • PANGALENGAN HUB
             </span>
           </div>
           
@@ -86,7 +86,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Hero Quick Stats */}
-      <div className="absolute bottom-6 md:bottom-18 left-0 w-full z-20">
+      <div className="w-full z-20 pb-6 md:pb-12 lg:pb-16 relative">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 bg-white/5 backdrop-blur-2xl p-4 lg:p-8 rounded-3xl lg:rounded-[2.5rem] border border-white/10">
             {[
