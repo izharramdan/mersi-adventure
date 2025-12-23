@@ -1,6 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Homepage from './pages/Homepage';
 import PackagesPage from './pages/PackagesPage';
 import DestinationsPage from './pages/DestinationsPage';
@@ -19,16 +20,18 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/packages" element={<PackagesPage />} />
-        <Route path="/destinations" element={<DestinationsPage />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-        <Route path="/terms-conditions" element={<TermsConditionsPage />} />
-      </Routes>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/packages" element={<PackagesPage />} />
+          <Route path="/destinations" element={<DestinationsPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-conditions" element={<TermsConditionsPage />} />
+        </Routes>
+      </Router>
+    </HelmetProvider>
   );
 };
 
