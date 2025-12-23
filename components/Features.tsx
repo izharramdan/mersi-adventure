@@ -5,23 +5,23 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: "fa-solid fa-water-ladder",
-      title: "Rafting Pro",
+      title: "Rafting Pangalengan",
       desc: "Jeram grade 3-4 di Sungai Palayangan untuk keseruan murni."
     },
     {
       icon: "fa-solid fa-truck-monster",
-      title: "Off-Road Land Rover",
+      title: "Offroad Pangalengan",
       desc: "Jelajahi jalur berlumpur melalui perkebunan teh bersejarah."
     },
     {
       icon: "fa-solid fa-tents",
-      title: "Glamping & Camping",
+      title: "Camping Pangalengan",
       desc: "Camping mewah di bawah bintang di tepi Situ Cileunca."
     },
     {
       icon: "fa-solid fa-users-gear",
-      title: "Outbound / Team Build",
-      desc: "Pelatihan profesional untuk pengembangan perusahaan dan grup."
+      title: "Team Building",
+      desc: "Pelatihan outbound profesional untuk pengembangan perusahaan dan grup."
     }
   ];
 

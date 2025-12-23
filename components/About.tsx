@@ -18,7 +18,7 @@ const About: React.FC = () => {
               <strong>Mersi Adventure</strong> adalah penyedia layanan wisata petualangan terdepan di Pangalengan, Bandung Selatan. Sejak 2012, kami telah memandu ribuan wisatawan menikmati keindahan alam dan adrenalin di kawasan Situ Cileunca.
             </p>
             <p>
-              Kami mengkhususkan diri pada paket wisata terintegrasi yang mencakup <strong>Rafting Sungai Palayangan</strong>, <strong>Offroad Land Rover</strong>, <strong>Paintball</strong>, <strong>Flying Fox</strong>, dan <strong>Camping Eksklusif</strong>.
+              Kami mengkhususkan diri pada paket wisata terintegrasi yang mencakup <strong>Rafting Pangalengan (Arung Jeram)</strong>, <strong>Offroad Land Rover</strong>, <strong>Paintball Pangalengan</strong>, <strong>Flying Fox</strong>, <strong>Team Building</strong>, dan <strong>Camping Eksklusif Pangalengan</strong>.
             </p>
             <p>
               Prioritas utama kami adalah keselamatan dan kepuasan Anda. Didukung oleh tim pemandu bersertifikat, peralatan standar internasional, dan asuransi, kami menjamin pengalaman liburan yang aman, nyaman, dan berkesan.

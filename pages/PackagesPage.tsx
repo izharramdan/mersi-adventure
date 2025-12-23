@@ -7,7 +7,7 @@ const PackagesPage: React.FC = () => {
   const allPackages = [
     {
       id: 1,
-      name: 'Rafting Standar',
+      name: 'Rafting Pangalengan Standar',
       price: 'RP 125.000',
       duration: '2 Jam',
       features: ['Rafting 4.5 KM', 'Pemandu Bersertifikat', 'Asuransi', 'P3K Standar', 'Bilas Air Hangat', 'Transportasi Lokal'],
@@ -15,7 +15,7 @@ const PackagesPage: React.FC = () => {
     },
     {
       id: 2,
-      name: 'Rafting + Makan',
+      name: 'Paket Rafting & Makan',
       price: 'RP 150.000',
       duration: '3 Jam',
       features: ['Rafting 4.5 KM', 'Makan Siang Prasmanan', 'Snack & Kelapa Muda', 'Pemandu Bersertifikat', 'Dokumentasi Foto', 'Bilas Air Hangat'],
@@ -31,7 +31,7 @@ const PackagesPage: React.FC = () => {
     },
     {
       id: 4,
-      name: 'Camping Riverside',
+      name: 'Camping Riverside Situ Cileunca',
       price: 'RP 550.000',
       duration: '2 Hari 1 Malam',
       features: ['Tenda Dome Eksklusif', 'Rafting', 'BBQ Dinner', 'Api Unggun', 'Sarapan', 'Matras & Sleeping Bag'],
@@ -39,7 +39,7 @@ const PackagesPage: React.FC = () => {
     },
     {
       id: 5,
-      name: 'Offroad Sunrise',
+      name: 'Offroad Sunrise Pangalengan',
       price: 'RP 1.800.000',
       duration: '4 Jam',
       features: ['Unit Land Rover (Max 7 Org)', 'Driver Profesional', 'Tiket Wayang Windu', 'Visit Hutan Pinus', 'Foto di Kebun Teh', 'Snack'],
@@ -66,9 +66,9 @@ const PackagesPage: React.FC = () => {
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase mb-4 block">Pilihan Terbaik</span>
-          <h1 className="text-4xl md:text-6xl font-black text-white mb-6">Paket Petualangan</h1>
+          <h1 className="text-4xl md:text-6xl font-black text-white mb-6">Paket Wisata Pangalengan & Adventure</h1>
           <p className="text-emerald-100/80 text-xl max-w-2xl mx-auto">
-            Temukan paket wisata yang sesuai dengan gaya petualangan dan budget Anda. Dari rafting seru hingga camping tenang di tepi sungai.
+            Temukan paket wisata Pangalengan terbaik: Rafting seru, Camping pinggir sungai, Offroad, dan Outbound Corporate.
           </p>
         </div>
       </div>

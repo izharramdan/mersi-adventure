@@ -6,19 +6,19 @@ const slides = [
     image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'Adrenalin Di Sungai Palayangan',
     subtitle: 'Rafting grade 3-4 yang memacu adrenalin di tengah keasrian alam.',
-    label: 'RAFTING EKSTREM'
+    label: 'RAFTING PANGALENGAN'
   },
   {
     image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'Sunrise Di Wayang Windu',
     subtitle: 'Nikmati keindahan kebun teh dari ketinggian dengan udara pegunungan.',
-    label: 'KEBUN TEH'
+    label: 'WISATA PANGALENGAN'
   },
   {
     image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     title: 'Offroad Adventure Landy',
     subtitle: 'Menjelajah jalur ekstrem hutan Rahong dengan unit Land Rover klasik.',
-    label: '4X4 OFFROAD'
+    label: 'OFFROAD PANGALENGAN'
   }
 ];
 
