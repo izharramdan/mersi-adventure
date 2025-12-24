@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
     { name: 'Beranda', href: '/', type: 'link' },
     { name: 'Paket', href: '/packages', type: 'link' },
     { name: 'Destinasi', href: '/destinations', type: 'link' },
+    { name: 'Blog', href: '/blog', type: 'link' },
     { name: 'Tentang', href: isHomePage ? '#about' : '/#about', type: 'anchor' }
   ];
 
