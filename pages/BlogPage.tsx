@@ -2,56 +2,12 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
+import { articles } from '../data/articles';
+
 const BlogPage: React.FC = () => {
-  const articles = [
-    {
-      id: 1,
-      title: '5 Pesona Tersembunyi Pangalengan yang Wajib Dikunjungi',
-      slug: 'pesona-tersembunyi-pangalengan',
-      date: '12 Desember 2024',
-      image: 'https://images.unsplash.com/photo-1596401057633-5656358c d1c7?q=80&w=1234&auto=format&fit=crop',
-      excerpt: 'Pangalengan tidak hanya tentang Situ Cileunca. Temukan 5 destinasi tersembunyi seperti Wayang Windu Panenjoan dan Riung Gunung yang menawarkan pemandangan menakjubkan.',
-      category: 'Destinasi'
-    },
-    {
-      id: 2,
-      title: 'Panduan Lengkap Rafting di Sungai Palayangan',
-      slug: 'panduan-rafting-palayangan',
-      date: '10 Desember 2024',
-      image: 'https://images.unsplash.com/photo-1544085311-11a028465b03?q=80&w=1234&auto=format&fit=crop',
-      excerpt: 'Sungai Palayangan menawarkan sensasi arung jeram yang menantang namun aman untuk pemula. Simak tips persiapan, peralatan yang dibawa, dan waktu terbaik untuk rafting.',
-      category: 'Tips & Trik'
-    },
-    {
-      id: 3,
-      title: 'Camping Mewah di Pinggir Sungai: Glamping Pangalengan',
-      slug: 'glamping-pangalengan',
-      date: '08 Desember 2024',
-      image: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=1234&auto=format&fit=crop',
-      excerpt: 'Ingin merasakan sensasi camping tapi tidak mau ribet? Glamping di pinggir Situ Cileunca adalah jawabannya. Nikmati fasilitas hotel bintang lima di alam terbuka.',
-      category: 'Akomodasi'
-    },
-    {
-      id: 4,
-      title: 'Sejarah Perkebunan Teh Malabar dan Sosok Bosscha',
-      slug: 'sejarah-teh-malabar',
-      date: '05 Desember 2024',
-      image: 'https://images.unsplash.com/photo-1598155523122-38423bb4d6c1?q=80&w=1234&auto=format&fit=crop',
-      excerpt: 'Menelusuri jejak sejarah K.A.R. Bosscha di Pangalengan. Dari makam hingga rumah peninggalannya yang kini menjadi objek wisata sejarah yang menarik.',
-      category: 'Sejarah'
-    },
-    {
-      id: 5,
-      title: 'Tips Liburan Hemat ke Pangalengan untuk Backpacker',
-      slug: 'tips-backpacker-pangalengan',
-      date: '01 Desember 2024',
-      image: 'https://images.unsplash.com/photo-1504542982818-1a6df669a130?q=80&w=1234&auto=format&fit=crop',
-      excerpt: 'Liburan seru tidak harus mahal. Simak panduan transportasi umum, penginapan murah, dan tempat makan enak di Pangalengan dengan budget minim.',
-      category: 'Tips & Trik'
-    }
-  ];
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -112,10 +68,10 @@ const BlogPage: React.FC = () => {
                   </p>
                   
                   <div className="mt-auto pt-6 border-t border-emerald-50">
-                    <a href="#" className="inline-flex items-center gap-2 text-orange-600 font-black tracking-wide uppercase text-sm hover:gap-4 transition-all">
+                    <Link to={`/blog/${article.slug}`} className="inline-flex items-center gap-2 text-orange-600 font-black tracking-wide uppercase text-sm hover:gap-4 transition-all">
                       Baca Selengkapnya
                       <i className="fa-solid fa-arrow-right"></i>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
