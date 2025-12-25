@@ -3,6 +3,9 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+// Import images
+import headerImg from '../assets/off_road1.JPG';
+
 const PackagesPage: React.FC = () => {
   const allPackages = [
     {
@@ -62,7 +65,7 @@ const PackagesPage: React.FC = () => {
       {/* Page Header */}
       <div className="relative pt-32 pb-20 bg-emerald-950 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1533512900330-1768661601cc?auto=format&fit=crop&q=80&w=2000" alt="Background" className="w-full h-full object-cover" />
+          <img src={headerImg} alt="Background" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase mb-4 block">Pilihan Terbaik</span>

@@ -1,23 +1,28 @@
 
 import React, { useState, useEffect } from 'react';
 
+// Import images
+import raftingHeroImg from '../assets/rafting4.JPG';
+import panoramaHeroImg from '../assets/off_road2.JPG';
+import offroadHeroImg from '../assets/off_road1.JPG';
+
 const slides = [
   {
-    image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Adrenalin Di Sungai Palayangan',
+    image: raftingHeroImg,
+    title: 'Adrenalin Di Sungai Pangalengan',
     subtitle: 'Rafting grade 3-4 yang memacu adrenalin di tengah keasrian alam.',
     label: 'RAFTING PANGALENGAN'
   },
   {
-    image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    title: 'Sunrise Di Wayang Windu',
-    subtitle: 'Nikmati keindahan kebun teh dari ketinggian dengan udara pegunungan.',
+    image: panoramaHeroImg,
+    title: 'Wisata Alam Pangalengan',
+    subtitle: 'Nikmati keindahan kebun teh dan danau dari ketinggian dengan udara pegunungan.',
     label: 'WISATA PANGALENGAN'
   },
   {
-    image: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+    image: offroadHeroImg,
     title: 'Offroad Adventure Landy',
-    subtitle: 'Menjelajah jalur ekstrem hutan Rahong dengan unit Land Rover klasik.',
+    subtitle: 'Menjelajah jalur ekstrem hutan pinus Pangalengan dengan unit Land Rover klasik.',
     label: 'OFFROAD PANGALENGAN'
   }
 ];

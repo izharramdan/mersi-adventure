@@ -8,12 +8,18 @@ import About from '../components/About';
 import Footer from '../components/Footer';
 import Features from '../components/Features';
 
+// Import images
+import offroadImg from '../assets/off_road2.JPG';
+import atvImg from '../assets/atv2.JPG';
+import lakeImg from '../assets/perahu.JPG';
+import raftingImg from '../assets/rafting2.jpg';
+
 const DestinationSpotlight: React.FC = () => {
   const spots = [
-    { name: 'Wayang Windu Panenjoan', img: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tag: 'Panorama' },
-    { name: 'Hutan Pinus Rahong', img: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tag: 'Adventure' },
-    { name: 'Situ Cileunca Lake', img: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tag: 'Nature' },
-    { name: 'Kawah Putih (Nearby)', img: 'https://images.unsplash.com/photo-1627241129356-137242cf14f0?q=80&w=1234&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', tag: 'Iconic' }
+    { name: 'Wayang Windu Panenjoan', img: offroadImg, tag: 'Panorama' },
+    { name: 'Hutan Pinus Pangalengan', img: atvImg, tag: 'Adventure' },
+    { name: 'Situ Cileunca Lake', img: lakeImg, tag: 'Nature' },
+    { name: 'Sungai Pangalengan', img: raftingImg, tag: 'Adrenalin' }
   ];
 
   return (
@@ -63,8 +69,8 @@ const Homepage: React.FC = () => {
     <>
       <Helmet>
         <title>Mersi Adventure | Wisata Pangalengan, Rafting & Camping</title>
-        <meta name="description" content="Paket wisata Pangalengan terlengkap: Rafting Sungai Palayangan, Camping di pinggir sungai, ATV, Offroad, dan Outbound Team Building. Booking sekarang!" />
-        <link rel="canonical" href="https://mersiadventure.com/" />
+        <meta name="description" content="Paket wisata Pangalengan terlengkap: Rafting Sungai Pangalengan, Camping di pinggir sungai, ATV, Offroad, dan Outbound Team Building. Booking sekarang!" />
+        <link rel="canonical" href="https://mersiwisatapangalengan.com/" />
       </Helmet>
       <Navbar />
       <Hero />

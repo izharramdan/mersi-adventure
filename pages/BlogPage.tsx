@@ -7,7 +7,11 @@ import { Helmet } from 'react-helmet-async';
 
 import { articles } from '../data/articles';
 
+// Import images
+import raftingImg from '../assets/rafting2.jpg';
+
 const BlogPage: React.FC = () => {
+  const headerImg = raftingImg;
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -20,7 +24,7 @@ const BlogPage: React.FC = () => {
       {/* Page Header */}
       <div className="relative pt-32 pb-20 bg-emerald-950 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=2000" alt="Background Blog" className="w-full h-full object-cover" />
+          <img src={headerImg} alt="Background Blog" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase mb-4 block">Inspirasi Perjalanan</span>

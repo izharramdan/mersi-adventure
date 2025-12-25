@@ -1,11 +1,18 @@
 
+// Import images
+import viewImg from '../assets/off_road2.JPG';
+import raftingImg from '../assets/rafting1.jpg';
+import lakeImg from '../assets/perahu.JPG';
+import teaImg from '../assets/off_road1.JPG';
+import travelImg from '../assets/atv1.jpg';
+
 export const articles = [
   {
     id: 1,
     title: '5 Pesona Tersembunyi Pangalengan yang Wajib Dikunjungi',
     slug: 'pesona-tersembunyi-pangalengan',
     date: '12 Desember 2024',
-    image: 'https://images.unsplash.com/photo-1596401057633-5656358cd1c7?q=80&w=1234&auto=format&fit=crop',
+    image: viewImg,
     excerpt: 'Pangalengan tidak hanya tentang Situ Cileunca. Temukan 5 destinasi tersembunyi seperti Wayang Windu Panenjoan dan Riung Gunung yang menawarkan pemandangan menakjubkan.',
     category: 'Destinasi',
     content: `
@@ -17,26 +24,26 @@ export const articles = [
       <h3>2. Riung Gunung</h3>
       <p>Sering disebut sebagai "Swiss-nya Bandung", Riung Gunung menyuguhkan pemandangan perbukitan hijau, sungai kecil yang jernih, dan udara yang sangat sejuk. Tempat ini sangat cocok untuk camping ceria bersama keluarga atau teman.</p>
       
-      <h3>3. Hutan Pinus Rahong</h3>
-      <p>Hutan Pinus Rahong menawarkan kesejukan hutan pinus yang asri. Di sini Anda bisa melakukan berbagai aktivitas seru seperti flying fox, paintball, atau sekadar bersantai menikmati alam.</p>
+      <h3>3. Hutan Pinus Pangalengan</h3>
+      <p>Hutan Pinus Pangalengan menawarkan kesejukan hutan pinus yang asri. Di sini Anda bisa melakukan berbagai aktivitas seru seperti flying fox, paintball, atau sekadar bersantai menikmati alam.</p>
       
       <h3>4. Nimo Highland</h3>
       <p>Nimo Highland (Nini Mountain) adalah destinasi kekinian dengan jembatan kaca berbentuk U yang diklaim sebagai jembatan kaca terpanjang di Jawa Barat. Dari sini, Anda bisa menikmati pemandangan 360 derajat kebun teh Malabar.</p>
       
       <h3>5. Kampung Singkur</h3>
-      <p>Bagi yang mencari ketenangan, Kampung Singkur adalah pilihan tepat. Berlokasi di tepi sungai Palayangan, tempat ini menawarkan sensasi menginap di alam terbuka dengan suara gemericik air yang menenangkan.</p>
+      <p>Bagi yang mencari ketenangan, Kampung Singkur adalah pilihan tepat. Berlokasi di tepi sungai Pangalengan, tempat ini menawarkan sensasi menginap di alam terbuka dengan suara gemericik air yang menenangkan.</p>
     `
   },
   {
     id: 2,
-    title: 'Panduan Lengkap Rafting di Sungai Palayangan',
-    slug: 'panduan-rafting-palayangan',
+    title: 'Panduan Lengkap Rafting di Sungai Pangalengan',
+    slug: 'panduan-rafting-pangalengan',
     date: '10 Desember 2024',
-    image: 'https://images.unsplash.com/photo-1544085311-11a028465b03?q=80&w=1234&auto=format&fit=crop',
-    excerpt: 'Sungai Palayangan menawarkan sensasi arung jeram yang menantang namun aman untuk pemula. Simak tips persiapan, peralatan yang dibawa, dan waktu terbaik untuk rafting.',
+    image: raftingImg,
+    excerpt: 'Sungai Pangalengan menawarkan sensasi arung jeram yang menantang namun aman untuk pemula. Simak tips persiapan, peralatan yang dibawa, dan waktu terbaik untuk rafting.',
     category: 'Tips & Trik',
     content: `
-      <p>Arung jeram atau rafting adalah aktivitas wajib jika berkunjung ke Pangalengan. Sungai Palayangan menjadi primadona dengan grade III-IV yang menantang namun tetap aman bagi pemula.</p>
+      <p>Arung jeram atau rafting adalah aktivitas wajib jika berkunjung ke Pangalengan. Sungai Pangalengan menjadi primadona dengan grade III-IV yang menantang namun tetap aman bagi pemula.</p>
 
       <h3>Persiapan Fisik & Mental</h3>
       <p>Pastikan Anda dalam kondisi sehat fisik dan mental. Meskipun pemandu akan mendampingi, arung jeram tetap membutuhkan stamina yang prima.</p>
@@ -51,7 +58,7 @@ export const articles = [
       </ul>
 
       <h3>Waktu Terbaik</h3>
-      <p>Rafting di Sungai Palayangan bisa dilakukan sepanjang tahun karena debit air diatur oleh pintu air Situ Cileunca. Namun, musim kemarau seringkali memberikan air yang lebih jernih.</p>
+      <p>Rafting di Sungai Pangalengan bisa dilakukan sepanjang tahun karena debit air diatur oleh pintu air Situ Cileunca. Namun, musim kemarau seringkali memberikan air yang lebih jernih.</p>
 
       <h3>Keselamatan</h3>
       <p>Selalu dengarkan instruksi pemandu (skipper). Gunakan helm dan pelampung dengan benar. Jangan panik jika terjatuh ke air, ikuti prosedur keselamatan yang sudah dijelaskan saat briefing.</p>
@@ -62,11 +69,11 @@ export const articles = [
     title: 'Camping Mewah di Pinggir Sungai: Glamping Pangalengan',
     slug: 'glamping-pangalengan',
     date: '08 Desember 2024',
-    image: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?q=80&w=1234&auto=format&fit=crop',
+    image: lakeImg,
     excerpt: 'Ingin merasakan sensasi camping tapi tidak mau ribet? Glamping di pinggir Situ Cileunca adalah jawabannya. Nikmati fasilitas hotel bintang lima di alam terbuka.',
     category: 'Akomodasi',
     content: `
-      <p>Glamping (Glamorous Camping) menjadi tren liburan baru yang menggabungkan keindahan alam dengan kenyamanan fasilitas modern. Di Pangalengan, banyak tersedia spot glamping di pinggir Situ Cileunca atau aliran Sungai Palayangan.</p>
+      <p>Glamping (Glamorous Camping) menjadi tren liburan baru yang menggabungkan keindahan alam dengan kenyamanan fasilitas modern. Di Pangalengan, banyak tersedia spot glamping di pinggir Situ Cileunca atau aliran Sungai Pangalengan.</p>
 
       <h3>Fasilitas Glamping</h3>
       <p>Biasanya tenda glamping sudah dilengkapi dengan:</p>
@@ -87,7 +94,7 @@ export const articles = [
     title: 'Sejarah Perkebunan Teh Malabar dan Sosok Bosscha',
     slug: 'sejarah-teh-malabar',
     date: '05 Desember 2024',
-    image: 'https://images.unsplash.com/photo-1598155523122-38423bb4d6c1?q=80&w=1234&auto=format&fit=crop',
+    image: teaImg,
     excerpt: 'Menelusuri jejak sejarah K.A.R. Bosscha di Pangalengan. Dari makam hingga rumah peninggalannya yang kini menjadi objek wisata sejarah yang menarik.',
     category: 'Sejarah',
     content: `
@@ -108,7 +115,7 @@ export const articles = [
     title: 'Tips Liburan Hemat ke Pangalengan untuk Backpacker',
     slug: 'tips-backpacker-pangalengan',
     date: '01 Desember 2024',
-    image: 'https://images.unsplash.com/photo-1504542982818-1a6df669a130?q=80&w=1234&auto=format&fit=crop',
+    image: travelImg,
     excerpt: 'Liburan seru tidak harus mahal. Simak panduan transportasi umum, penginapan murah, dan tempat makan enak di Pangalengan dengan budget minim.',
     category: 'Tips & Trik',
     content: `

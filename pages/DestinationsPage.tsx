@@ -3,42 +3,50 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+// Import images
+import viewImg from '../assets/off_road2.JPG';
+import forestImg from '../assets/atv2.JPG';
+import lakeImg from '../assets/perahu.JPG';
+import teaImg from '../assets/off_road1.JPG';
+import riverImg from '../assets/rafting1.jpg';
+import headerImg from '../assets/rafting4.JPG';
+
 const DestinationsPage: React.FC = () => {
   const destinations = [
     {
       name: 'Wayang Windu Panenjoan',
       category: 'Nature & View',
-      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?auto=format&fit=crop&w=1000',
+      image: viewImg,
       description: 'Spot terbaik untuk menikmati sunrise dan sunset di tengah hamparan kebun teh yang luas. Jembatan kayu ikonik membentang membelah kebun teh.'
     },
     {
-      name: 'Hutan Pinus Rahong',
+      name: 'Hutan Pinus Pangalengan',
       category: 'Adventure',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1000',
+      image: forestImg,
       description: 'Kawasan hutan pinus yang asri, lokasi start point rafting dan area camping ground. Udaranya sangat sejuk dan segar.'
     },
     {
       name: 'Situ Cileunca',
       category: 'Lake & Water',
-      image: 'https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1000',
+      image: lakeImg,
       description: 'Danau buatan yang menjadi ikon Pangalengan. Pusat aktivitas air seperti perahu, kayak, dan pemandangan pegunungan yang memukau.'
     },
     {
       name: 'Nimo Highland',
       category: 'Modern Attraction',
-      image: 'https://images.unsplash.com/photo-1596395819057-e37f55a85199?auto=format&fit=crop&w=1000',
+      image: teaImg,
       description: 'Destinasi kekinian dengan konsep bangunan ala Santorini dan jembatan kaca yang menawarkan pemandangan 360 derajat.'
     },
     {
       name: 'Sunrise Point Cukul',
       category: 'Photography',
-      image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000',
+      image: forestImg, // Reusing forest/ATV image as it fits nature
       description: 'Spot favorit fotografer untuk memburu sunrise dengan latar belakang Gunung Wayang dan kabut tipis yang menyelimuti perkebunan.'
     },
     {
       name: 'Kampung Singkur',
       category: 'Family Fun',
-      image: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?auto=format&fit=crop&w=1000',
+      image: riverImg,
       description: 'Area wisata keluarga di pinggir sungai dengan fasilitas tubing, paintball, dan warung makan tradisional.'
     }
   ];
@@ -50,7 +58,7 @@ const DestinationsPage: React.FC = () => {
       {/* Page Header */}
       <div className="relative pt-32 pb-20 bg-emerald-950 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://images.unsplash.com/photo-1414124488080-0188dcbb8834?auto=format&fit=crop&q=80&w=2000" alt="Destinations Background" className="w-full h-full object-cover" />
+          <img src={headerImg} alt="Destinations Background" className="w-full h-full object-cover" />
         </div>
         <div className="container mx-auto px-6 relative z-10 text-center">
           <span className="text-orange-500 font-bold tracking-widest uppercase mb-4 block">Eksplorasi Alam</span>

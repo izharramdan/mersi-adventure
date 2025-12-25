@@ -6,7 +6,7 @@ const Features: React.FC = () => {
     {
       icon: "fa-solid fa-water-ladder",
       title: "Rafting Pangalengan",
-      desc: "Jeram grade 3-4 di Sungai Palayangan untuk keseruan murni."
+      desc: "Jeram grade 3-4 di Sungai Pangalengan untuk keseruan murni."
     },
     {
       icon: "fa-solid fa-truck-monster",

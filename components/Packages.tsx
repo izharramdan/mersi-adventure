@@ -1,6 +1,12 @@
 
 import React, { useState } from 'react';
 
+// Import images
+import raftingImg from '../assets/rafting1.jpg';
+import offroadImg from '../assets/off_road1.JPG';
+import flyingFoxImg from '../assets/flying_fox.JPG';
+import atvImg from '../assets/atv1.jpg';
+
 interface Package {
   id: string;
   title: string;
@@ -15,33 +21,33 @@ interface Package {
 const PACKAGES: Package[] = [
   {
     id: 'p1',
-    title: 'Rafting Palayangan',
+    title: 'Rafting Pangalengan',
     price: '150.000',
     unit: '/ orang',
     category: 'Wisata Air',
-    image: 'https://images.unsplash.com/photo-1530866495547-0849697244b7?auto=format&fit=crop&q=80&w=800',
+    image: raftingImg,
     desc: 'Pengalaman mengarungi sungai 5km dengan instruktur bersertifikat.',
-    spots: ['Sungai Palayangan', 'Situ Cileunca', 'Hutan Rahong']
+    spots: ['Sungai Pangalengan', 'Situ Cileunca', 'Hutan Pinus Pangalengan']
   },
   {
     id: 'p2',
-    title: 'Tour Land Rover',
-    price: '1.250.000',
+    title: 'Offroad Land Rover',
+    price: '2.000.000',
     unit: '/ unit (7 pax)',
     category: 'Offroad',
-    image: 'https://images.unsplash.com/photo-1533512900330-1768661601cc?auto=format&fit=crop&q=80&w=800',
+    image: offroadImg,
     desc: 'Menjelajahi kebun teh Malabar dengan unit Land Rover legendaris.',
     spots: ['Kebun Teh Malabar', 'Wayang Windu', 'Situ Cileunca']
   },
   {
     id: 'p3',
-    title: 'Camping Premium',
-    price: '350.000',
+    title: 'Flying Fox',
+    price: '35.000',
     unit: '/ orang',
-    category: 'Penginapan',
-    image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&q=80&w=800',
-    desc: 'Berkemah di tepi danau dengan fasilitas tenda lengkap dan api unggun.',
-    spots: ['Situ Cileunca', 'Pine Forest', 'Sunrise Point']
+    category: 'Outbound',
+    image: flyingFoxImg,
+    desc: 'Meluncur melintasi danau Situ Cileunca dengan pemandangan memukau.',
+    spots: ['Situ Cileunca', 'Hutan Pinus', 'Lakeside']
   },
   {
     id: 'p4',
@@ -49,9 +55,9 @@ const PACKAGES: Package[] = [
     price: '200.000',
     unit: '/ unit',
     category: 'Berkendara',
-    image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?auto=format&fit=crop&q=80&w=800',
+    image: atvImg,
     desc: 'Melewati jalur berlumpur dan hutan pinus dengan motor roda empat.',
-    spots: ['Hutan Rahong', 'Jalur Offroad', 'River Side']
+    spots: ['Hutan Pinus Pangalengan', 'Jalur Offroad', 'River Side']
   }
 ];
 
@@ -74,7 +80,7 @@ const Packages: React.FC = () => {
           </div>
           
           <div className="flex flex-wrap gap-2">
-            {['Semua', 'Wisata Air', 'Offroad', 'Penginapan', 'Berkendara'].map((cat) => (
+            {['Semua', 'Wisata Air', 'Offroad', 'Outbound', 'Berkendara'].map((cat) => (
               <button 
                 key={cat}
                 onClick={() => setFilter(cat)}
