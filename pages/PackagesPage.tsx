@@ -112,9 +112,14 @@ const PackagesPage: React.FC = () => {
                     <span className="text-3xl font-black text-orange-600">{pkg.price}</span>
                     {pkg.price !== 'Hubungi Kami' && <span className="text-sm text-emerald-900/40 font-bold">/pax</span>}
                   </div>
-                  <button className={`w-full py-4 rounded-xl font-black text-lg transition-all ${pkg.highlight ? 'bg-orange-600 text-white hover:bg-orange-700 shadow-lg shadow-orange-600/20' : 'bg-emerald-50 text-emerald-950 hover:bg-emerald-100'}`}>
+                  <a 
+                    href={`https://wa.me/6281313004099?text=Halo%20Mersi%20Adventure,%20saya%20tertarik%20untuk%20booking%20${encodeURIComponent(pkg.name)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block text-center w-full py-4 rounded-xl font-black text-lg transition-all ${pkg.highlight ? 'bg-orange-600 text-white hover:bg-orange-700 shadow-lg shadow-orange-600/20' : 'bg-emerald-50 text-emerald-950 hover:bg-emerald-100'}`}
+                  >
                     Booking Sekarang
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}

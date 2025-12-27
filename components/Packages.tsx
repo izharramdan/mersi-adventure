@@ -3,9 +3,12 @@ import React, { useState } from 'react';
 
 // Import images
 import raftingImg from '../assets/rafting1.jpg';
+import raftingImg2 from '../assets/rafting2.jpg';
 import offroadImg from '../assets/off_road1.JPG';
+import offroadImg2 from '../assets/off_road2.JPG';
 import flyingFoxImg from '../assets/flying_fox.JPG';
 import atvImg from '../assets/atv1.jpg';
+import perahuImg from '../assets/perahu.JPG';
 
 interface Package {
   id: string;
@@ -21,8 +24,8 @@ interface Package {
 const PACKAGES: Package[] = [
   {
     id: 'p1',
-    title: 'Rafting Pangalengan',
-    price: '150.000',
+    title: 'Arum Jeram Rafting',
+    price: '175.000',
     unit: '/ orang',
     category: 'Wisata Air',
     image: raftingImg,
@@ -31,8 +34,18 @@ const PACKAGES: Package[] = [
   },
   {
     id: 'p2',
-    title: 'Offroad Land Rover',
-    price: '2.000.000',
+    title: 'ATV Adventure',
+    price: '200.000',
+    unit: 'Single / 250rb Double',
+    category: 'Berkendara',
+    image: atvImg,
+    desc: 'Melewati jalur berlumpur dan hutan pinus dengan motor roda empat.',
+    spots: ['Hutan Pinus Pangalengan', 'Jalur Offroad', 'River Side']
+  },
+  {
+    id: 'p3',
+    title: 'Fun Offroad',
+    price: '1.850.000',
     unit: '/ unit (7 pax)',
     category: 'Offroad',
     image: offroadImg,
@@ -40,9 +53,9 @@ const PACKAGES: Package[] = [
     spots: ['Kebun Teh Malabar', 'Wayang Windu', 'Situ Cileunca']
   },
   {
-    id: 'p3',
+    id: 'p4',
     title: 'Flying Fox',
-    price: '35.000',
+    price: '30.000',
     unit: '/ orang',
     category: 'Outbound',
     image: flyingFoxImg,
@@ -50,14 +63,34 @@ const PACKAGES: Package[] = [
     spots: ['Situ Cileunca', 'Hutan Pinus', 'Lakeside']
   },
   {
-    id: 'p4',
-    title: 'ATV Adventure',
-    price: '200.000',
-    unit: '/ unit',
-    category: 'Berkendara',
-    image: atvImg,
-    desc: 'Melewati jalur berlumpur dan hutan pinus dengan motor roda empat.',
-    spots: ['Hutan Pinus Pangalengan', 'Jalur Offroad', 'River Side']
+    id: 'p5',
+    title: 'Paintball',
+    price: '95.000',
+    unit: '/ orang',
+    category: 'Outbound',
+    image: offroadImg2,
+    desc: 'Simulasi pertempuran seru dengan peralatan lengkap dan aman.',
+    spots: ['Hutan Pinus', 'Arena Paintball', 'Situ Cileunca']
+  },
+  {
+    id: 'p6',
+    title: 'Team Building Fun Game',
+    price: '95.000',
+    unit: '/ orang',
+    category: 'Outbound',
+    image: raftingImg2,
+    desc: 'Permainan seru untuk kekompakan tim dan keseruan bersama.',
+    spots: ['Area Outbound', 'Lapangan Rumput', 'Tepi Danau']
+  },
+  {
+    id: 'p7',
+    title: 'Tour Perahu',
+    price: '250.000',
+    unit: '/ perahu',
+    category: 'Wisata Air',
+    image: perahuImg,
+    desc: 'Berkeliling danau Situ Cileunca menikmati pemandangan asri.',
+    spots: ['Situ Cileunca', 'Pulau Nusa Manuk', 'Kebun Strawberry']
   }
 ];
 
@@ -114,13 +147,13 @@ const Packages: React.FC = () => {
                   ))}
                 </div>
 
-                <div className="mt-auto flex items-center justify-between pt-6 border-t border-emerald-50">
-                  <div>
-                    <p className="text-[10px] font-bold text-emerald-800/40 uppercase tracking-widest">Mulai Dari</p>
-                    <p className="text-2xl font-black text-emerald-950">
-                      <span className="text-orange-600 text-sm">Rp</span> {pkg.price}
-                      <span className="text-[10px] text-emerald-800/40 font-bold">{pkg.unit}</span>
+                <div className="mt-auto flex items-end justify-between pt-6 border-t border-emerald-50">
+                  <div className="flex flex-col">
+                    <p className="text-[10px] font-bold text-emerald-800/40 uppercase tracking-widest mb-1">Mulai Dari</p>
+                    <p className="text-2xl font-black text-emerald-950 leading-none">
+                      <span className="text-orange-600 text-sm mr-1">Rp</span>{pkg.price}
                     </p>
+                    <p className="text-[10px] text-emerald-800/60 font-bold mt-1">{pkg.unit}</p>
                   </div>
                   <button className="w-12 h-12 bg-emerald-950 text-white rounded-2xl flex items-center justify-center hover:bg-orange-600 transition-all shadow-lg shadow-emerald-900/10">
                     <i className="fa-solid fa-arrow-right"></i>
