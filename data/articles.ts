@@ -11,7 +11,7 @@ export const articles = [
     id: 1,
     title: '5 Pesona Tersembunyi Pangalengan yang Wajib Dikunjungi',
     slug: 'pesona-tersembunyi-pangalengan',
-    date: '12 Desember 2024',
+    date: '12 Desember 2025',
     image: viewImg,
     excerpt: 'Pangalengan tidak hanya tentang Situ Cileunca. Temukan 5 destinasi tersembunyi seperti Wayang Windu Panenjoan dan Riung Gunung yang menawarkan pemandangan menakjubkan.',
     category: 'Destinasi',
@@ -38,7 +38,7 @@ export const articles = [
     id: 2,
     title: 'Panduan Lengkap Rafting di Sungai Pangalengan',
     slug: 'panduan-rafting-pangalengan',
-    date: '10 Desember 2024',
+    date: '10 Desember 2025',
     image: raftingImg,
     excerpt: 'Sungai Pangalengan menawarkan sensasi arung jeram yang menantang namun aman untuk pemula. Simak tips persiapan, peralatan yang dibawa, dan waktu terbaik untuk rafting.',
     category: 'Tips & Trik',
@@ -68,7 +68,7 @@ export const articles = [
     id: 3,
     title: 'Camping Mewah di Pinggir Sungai: Glamping Pangalengan',
     slug: 'glamping-pangalengan',
-    date: '08 Desember 2024',
+    date: '08 Desember 2025',
     image: lakeImg,
     excerpt: 'Ingin merasakan sensasi camping tapi tidak mau ribet? Glamping di pinggir Situ Cileunca adalah jawabannya. Nikmati fasilitas hotel bintang lima di alam terbuka.',
     category: 'Akomodasi',
@@ -93,7 +93,7 @@ export const articles = [
     id: 4,
     title: 'Sejarah Perkebunan Teh Malabar dan Sosok Bosscha',
     slug: 'sejarah-teh-malabar',
-    date: '05 Desember 2024',
+    date: '05 Desember 2025',
     image: teaImg,
     excerpt: 'Menelusuri jejak sejarah K.A.R. Bosscha di Pangalengan. Dari makam hingga rumah peninggalannya yang kini menjadi objek wisata sejarah yang menarik.',
     category: 'Sejarah',
@@ -114,7 +114,7 @@ export const articles = [
     id: 5,
     title: 'Tips Liburan Hemat ke Pangalengan untuk Backpacker',
     slug: 'tips-backpacker-pangalengan',
-    date: '01 Desember 2024',
+    date: '01 Desember 2025',
     image: travelImg,
     excerpt: 'Liburan seru tidak harus mahal. Simak panduan transportasi umum, penginapan murah, dan tempat makan enak di Pangalengan dengan budget minim.',
     category: 'Tips & Trik',
@@ -129,6 +129,75 @@ export const articles = [
 
       <h3>Makan</h3>
       <p>Warung nasi dan jajanan kaki lima di sekitar pasar atau alun-alun Pangalengan menawarkan makanan lezat dengan harga "warga lokal". Cobain susu murni Pangalengan dan kerupuk gurilem.</p>
+    `
+  },
+  {
+    id: 6,
+    title: 'Tips Aman Rafting untuk Pemula di Pangalengan',
+    slug: 'tips-aman-rafting-pemula',
+    date: '15 Januari 2025',
+    image: raftingImg,
+    excerpt: 'Baru pertama kali mencoba arung jeram? Jangan khawatir! Simak panduan lengkap keselamatan, posisi duduk, dan cara mendayung yang benar.',
+    category: 'Tips & Trik',
+    content: `
+      <p>Rafting atau arung jeram adalah olahraga air yang memacu adrenalin. Bagi pemula, mungkin terdengar menakutkan, tapi dengan persiapan yang tepat, ini akan menjadi pengalaman paling seru.</p>
+      
+      <h3>1. Perhatikan Posisi Duduk</h3>
+      <p>Duduklah di pinggir perahu dengan posisi kaki menjepit tabung dalam perahu. Jangan duduk di tengah karena akan menyulitkan keseimbangan perahu.</p>
+      
+      <h3>2. Cara Memegang Dayung (Paddle)</h3>
+      <p>Pegang ujung dayung (T-grip) dengan satu tangan, dan tangan lainnya di batang dayung. Jangan terbalik! Ini kunci agar dayungan Anda kuat dan tidak melukai teman.</p>
+      
+      <h3>3. Dengarkan Aba-aba Skipper</h3>
+      <p>Pemandu atau skipper adalah kapten Anda. Jika mereka teriak "Maju!", dayung ke depan sekuat tenaga. Jika "Boom!", segera masuk ke dalam perahu untuk berlindung.</p>
+      
+      <h3>4. Jangan Panik Saat Jatuh</h3>
+      <p>Jika terlempar ke air, usahakan posisi tubuh telentang menghadap ke hilir (arah air mengalir) dengan kaki diangkat ke permukaan (nose up, toes up). Ini mencegah kaki tersangkut batu di dasar sungai.</p>
+    `
+  },
+  {
+    id: 7,
+    title: 'Rute Offroad Terbaik: Menembus Hutan Pinus Rahong',
+    slug: 'offroad-hutan-pinus-rahong',
+    date: '20 Januari 2025',
+    image: travelImg,
+    excerpt: 'Menjelajahi jalur lumpur ekstrem dan tanjakan curam di tengah hutan pinus Rahong. Pengalaman offroad Land Rover yang tak terlupakan!',
+    category: 'Adventure',
+    content: `
+      <p>Bagi pecinta otomotif dan petualangan, jalur offroad di Pangalengan adalah surga. Salah satu trek favorit adalah rute Hutan Pinus Rahong.</p>
+      
+      <h3>Sensasi Land Rover Series</h3>
+      <p>Menggunakan mobil Land Rover tua yang tangguh, Anda akan diajak melibas jalanan berlumpur yang dalam. Guncangan di dalam mobil justru menjadi keseruan tersendiri.</p>
+      
+      <h3>Pemandangan Hutan Pinus</h3>
+      <p>Sepanjang perjalanan, mata Anda akan dimanjakan dengan deretan pohon pinus yang menjulang tinggi. Udara segar bercampur aroma hutan memberikan efek terapi yang menenangkan.</p>
+      
+      <h3>Stop Point Foto</h3>
+      <p>Driver biasanya akan berhenti di beberapa titik dengan pemandangan terbaik. Jangan lupa siapkan kamera untuk mengabadikan momen mobil Anda "berkubang" di lumpur.</p>
+    `
+  },
+  {
+    id: 8,
+    title: 'Kuliner Wajib Coba Setelah Lelah Berpetualang',
+    slug: 'kuliner-wajib-pangalengan',
+    date: '25 Januari 2025',
+    image: lakeImg,
+    excerpt: 'Lapar setelah rafting atau offroad? Ini dia rekomendasi kuliner legendaris di Pangalengan yang siap menggoyang lidah Anda.',
+    category: 'Kuliner',
+    content: `
+      <p>Liburan ke Pangalengan belum lengkap tanpa mencicipi kulinernya. Udara dingin Pangalengan paling pas ditemani makanan hangat.</p>
+      
+      <h3>1. Sate Maranggi</h3>
+      <p>Berbeda dengan sate madura, sate maranggi direndam bumbu rempah sebelum dibakar, sehingga rasanya meresap tanpa perlu saus kacang berlebih. Nikmat disantap dengan ketan bakar.</p>
+      
+      <h3>2. Susu Murni KPBS</h3>
+      <p>Pangalengan adalah sentra penghasil susu sapi. Mampirlah ke rest area KPBS untuk menikmati susu murni hangat aneka rasa, yogurt, dan permen susu.</p>
+      
+      <h3>3. Kerupuk Gurilem</h3>
+      <p>Camilan khas Cililin yang juga populer di Pangalengan. Kerupuk putih panjang dengan bumbu pedas gurih ini sangat cocok untuk oleh-oleh.</p>
+      
+      <h3>4. Nasi Liwet Kastrol</h3>
+      <p>Banyak rumah makan di pinggir Situ Cileunca menyediakan paket nasi liwet lengkap dengan ayam goreng, ikan asin, tahu tempe, dan sambal dadak. Makan bersama di atas daun pisang menambah kenikmatan.</p>
     `
   }
 ];

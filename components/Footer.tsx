@@ -29,11 +29,11 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="text-white font-bold text-lg mb-6">Tautan Cepat</h4>
             <ul className="space-y-4 text-sm">
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Beranda</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Paket Kami</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Galeri Petualangan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Protokol Keamanan</a></li>
-              <li><a href="#" className="hover:text-orange-500 transition-colors">Panduan Booking</a></li>
+              <li><Link to="/" className="hover:text-orange-500 transition-colors">Beranda</Link></li>
+              <li><Link to="/packages" className="hover:text-orange-500 transition-colors">Paket Kami</Link></li>
+              <li><Link to="/gallery" className="hover:text-orange-500 transition-colors">Galeri Petualangan</Link></li>
+              <li><Link to="/safety-protocol" className="hover:text-orange-500 transition-colors">Protokol Keamanan</Link></li>
+              <li><Link to="/booking-guide" className="hover:text-orange-500 transition-colors">Panduan Booking</Link></li>
             </ul>
           </div>
 

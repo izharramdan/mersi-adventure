@@ -155,9 +155,13 @@ const Packages: React.FC = () => {
                     </p>
                     <p className="text-[10px] text-emerald-800/60 font-bold mt-1">{pkg.unit}</p>
                   </div>
-                  <button className="w-12 h-12 bg-emerald-950 text-white rounded-2xl flex items-center justify-center hover:bg-orange-600 transition-all shadow-lg shadow-emerald-900/10">
+                  <a 
+                    href={`https://wa.me/6281313004099?text=Halo Mersi Adventure, saya tertarik dengan paket ${pkg.title}`}
+                    target="_blank"
+                    className="w-12 h-12 bg-emerald-950 text-white rounded-2xl flex items-center justify-center hover:bg-orange-600 transition-all shadow-lg shadow-emerald-900/10"
+                  >
                     <i className="fa-solid fa-arrow-right"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

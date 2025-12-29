@@ -104,9 +104,14 @@ const Navbar: React.FC = () => {
               </a>
             )
           ))}
-          <button className="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black text-lg shadow-lg">
+          <a 
+            href="https://wa.me/6281313004099" 
+            target="_blank"
+            className="w-full bg-emerald-600 text-white py-4 rounded-2xl font-black text-lg shadow-lg flex items-center justify-center gap-2"
+          >
+            <i className="fa-brands fa-whatsapp text-2xl"></i>
             Booking Sekarang
-          </button>
+          </a>
         </div>
       </div>
     </nav>
