@@ -11,7 +11,7 @@ const PackagesPage: React.FC = () => {
     {
       id: 1,
       name: 'Rafting Pangalengan Standar',
-      price: 'RP 125.000',
+      price: 'RP 175.000',
       duration: '2 Jam',
       features: ['Rafting 4.5 KM', 'Pemandu Bersertifikat', 'Asuransi', 'P3K Standar', 'Bilas Air Hangat', 'Transportasi Lokal'],
       highlight: false
@@ -19,7 +19,7 @@ const PackagesPage: React.FC = () => {
     {
       id: 2,
       name: 'Paket Rafting & Makan',
-      price: 'RP 150.000',
+      price: 'RP 200.000',
       duration: '3 Jam',
       features: ['Rafting 4.5 KM', 'Makan Siang Prasmanan', 'Snack & Kelapa Muda', 'Pemandu Bersertifikat', 'Dokumentasi Foto', 'Bilas Air Hangat'],
       highlight: true
@@ -27,7 +27,7 @@ const PackagesPage: React.FC = () => {
     {
       id: 3,
       name: 'Full Adventure',
-      price: 'RP 350.000',
+      price: 'RP 400.000',
       duration: '6 Jam',
       features: ['Rafting 4.5 KM', 'Flying Fox', 'Paintball (40 Peluru)', 'Makan Siang', 'Coffee Break', 'Dokumentasi Video'],
       highlight: false
@@ -43,7 +43,7 @@ const PackagesPage: React.FC = () => {
     {
       id: 5,
       name: 'Offroad Sunrise Pangalengan',
-      price: 'RP 1.800.000',
+      price: 'RP 1.850.000',
       duration: '4 Jam',
       features: ['Unit Land Rover (Max 7 Org)', 'Driver Profesional', 'Tiket Wayang Windu', 'Visit Hutan Pinus', 'Foto di Kebun Teh', 'Snack'],
       highlight: false
