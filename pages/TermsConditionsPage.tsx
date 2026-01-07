@@ -1,11 +1,17 @@
 
 import React from 'react';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const TermsConditionsPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50">
+      <Seo 
+        title="Syarat dan Ketentuan | Mersi Adventure"
+        description="Pahami syarat dan ketentuan booking, reschedule, dan refund paket wisata Mersi Adventure Pangalengan sebelum melakukan pemesanan."
+        path="/terms-conditions"
+      />
       <Navbar />
       
       <div className="pt-32 pb-20 container mx-auto px-6">

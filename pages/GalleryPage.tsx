@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -28,10 +28,11 @@ const GalleryPage: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Galeri Petualangan | Mersi Adventure Pangalengan</title>
-        <meta name="description" content="Dokumentasi keseruan wisatawan menikmati rafting, offroad, camping, dan wisata alam di Pangalengan bersama Mersi Adventure." />
-      </Helmet>
+      <Seo 
+        title="Galeri Petualangan | Mersi Adventure Pangalengan"
+        description="Dokumentasi keseruan wisatawan menikmati rafting, offroad, camping, dan wisata alam di Pangalengan bersama Mersi Adventure."
+        path="/gallery"
+      />
       <Navbar />
       
       <main className="pt-24 pb-12 bg-slate-50 min-h-screen">

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -60,6 +61,12 @@ const PackagesPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <Seo 
+        title="Paket Wisata Pangalengan - Rafting & Camping | Mersi Adventure"
+        description="Daftar harga paket wisata Pangalengan 2024. Rafting mulai 125rb, Camping mulai 250rb. Pilihan paket outbound corporate dan family gathering."
+        path="/packages"
+        keywords="harga rafting pangalengan, paket camping pangalengan, paket outbound pangalengan, wisata murah pangalengan"
+      />
       <Navbar />
       
       {/* Page Header */}

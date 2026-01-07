@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { articles } from '../data/articles';
@@ -35,10 +35,11 @@ const BlogDetailPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Helmet>
-        <title>{article.title} | Mersi Adventure Blog</title>
-        <meta name="description" content={article.excerpt} />
-      </Helmet>
+      <Seo 
+        title={`${article.title} | Mersi Adventure Blog`}
+        description={article.excerpt}
+        path={`/blog/${article.slug}`}
+      />
       <Navbar />
 
       {/* Hero Image */}

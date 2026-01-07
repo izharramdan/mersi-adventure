@@ -1,11 +1,17 @@
 
 import React from 'react';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 const PrivacyPolicyPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-slate-50">
+      <Seo 
+        title="Kebijakan Privasi | Mersi Adventure"
+        description="Kebijakan privasi Mersi Adventure menjelaskan bagaimana kami mengelola data pribadi Anda untuk keperluan reservasi wisata Pangalengan."
+        path="/privacy-policy"
+      />
       <Navbar />
       
       <div className="pt-32 pb-20 container mx-auto px-6">

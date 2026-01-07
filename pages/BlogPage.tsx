@@ -3,7 +3,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 
 import { articles } from '../data/articles';
 
@@ -15,10 +15,11 @@ const BlogPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Helmet>
-        <title>Blog Wisata Pangalengan | Artikel Terbaru Mersi Adventure</title>
-        <meta name="description" content="Kumpulan artikel menarik seputar wisata Pangalengan, tips rafting, camping guide, dan rekomendasi kuliner. Dapatkan inspirasi liburan Anda di sini." />
-      </Helmet>
+      <Seo 
+        title="Blog Wisata Pangalengan | Artikel Terbaru Mersi Adventure"
+        description="Kumpulan artikel menarik seputar wisata Pangalengan, tips rafting, camping guide, dan rekomendasi kuliner. Dapatkan inspirasi liburan Anda di sini."
+        path="/blog"
+      />
       <Navbar />
 
       {/* Page Header */}

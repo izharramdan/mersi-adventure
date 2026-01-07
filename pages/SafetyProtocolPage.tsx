@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -40,10 +40,11 @@ const SafetyProtocolPage: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Protokol Keamanan | Mersi Adventure Pangalengan</title>
-        <meta name="description" content="Standar prosedur keselamatan dan keamanan (SOP) Mersi Adventure untuk menjamin pengalaman wisata yang aman dan nyaman." />
-      </Helmet>
+      <Seo 
+        title="Protokol Keamanan | Mersi Adventure Pangalengan"
+        description="Standar prosedur keselamatan dan keamanan (SOP) Mersi Adventure untuk menjamin pengalaman wisata yang aman dan nyaman."
+        path="/safety-protocol"
+      />
       <Navbar />
       
       <div className="pt-32 pb-24 bg-white min-h-screen">

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import Packages from '../components/Packages';
@@ -67,11 +67,12 @@ const TrustSection: React.FC = () => {
 const Homepage: React.FC = () => {
   return (
     <>
-      <Helmet>
-        <title>Mersi Adventure | Wisata Pangalengan, Rafting & Camping</title>
-        <meta name="description" content="Paket wisata Pangalengan terlengkap: Rafting Sungai Pangalengan, Camping di pinggir sungai, ATV, Offroad, dan Outbound Team Building. Booking sekarang!" />
-        <link rel="canonical" href="https://mersiwisatapangalengan.com/" />
-      </Helmet>
+      <Seo 
+        title="Mersi Adventure | Wisata Pangalengan, Rafting, Camping & Outbound"
+        description="Paket wisata Pangalengan terlengkap: Rafting Sungai Pangalengan, Camping di pinggir sungai, ATV, Offroad, dan Outbound Team Building. Booking sekarang!"
+        path="/"
+        keywords="wisata pangalengan, rafting pangalengan, camping pangalengan, outbound pangalengan, paket wisata pangalengan"
+      />
       <Navbar />
       <Hero />
       <TrustSection />

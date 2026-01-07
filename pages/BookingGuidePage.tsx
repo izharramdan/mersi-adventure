@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -40,10 +40,11 @@ const BookingGuidePage: React.FC = () => {
 
   return (
     <>
-      <Helmet>
-        <title>Panduan Booking | Mersi Adventure Pangalengan</title>
-        <meta name="description" content="Cara mudah memesan paket wisata rafting, offroad, dan camping di Pangalengan. Ikuti langkah sederhana ini untuk liburan tanpa ribet." />
-      </Helmet>
+      <Seo 
+        title="Panduan Booking | Mersi Adventure Pangalengan"
+        description="Cara mudah memesan paket wisata rafting, offroad, dan camping di Pangalengan. Ikuti langkah sederhana ini untuk liburan tanpa ribet."
+        path="/booking-guide"
+      />
       <Navbar />
       
       <div className="pt-32 pb-24 bg-gradient-to-b from-emerald-50 to-white min-h-screen">

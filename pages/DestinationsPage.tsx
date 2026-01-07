@@ -1,5 +1,6 @@
 
 import React from 'react';
+import Seo from '../components/Seo';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -53,6 +54,12 @@ const DestinationsPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
+      <Seo 
+        title="Destinasi Wisata Pangalengan Populer | Mersi Adventure"
+        description="Eksplorasi tempat wisata hits di Pangalengan: Wayang Windu Panenjoan, Situ Cileunca, Hutan Pinus Rahong, dan Nimo Highland."
+        path="/destinations"
+        keywords="tempat wisata pangalengan, wayang windu, situ cileunca, nimo highland, hutan pinus pangalengan"
+      />
       <Navbar />
 
       {/* Page Header */}
