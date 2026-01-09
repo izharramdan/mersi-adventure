@@ -71,7 +71,7 @@ const Homepage: React.FC = () => {
         title="Mersi Adventure | Wisata Pangalengan, Rafting, Camping & Outbound"
         description="Paket wisata Pangalengan terlengkap: Rafting Sungai Pangalengan, Camping di pinggir sungai, ATV, Offroad, dan Outbound Team Building. Booking sekarang!"
         path="/"
-        keywords="wisata pangalengan, rafting pangalengan, camping pangalengan, outbound pangalengan, paket wisata pangalengan"
+        keywords="wisata pangalengan, adventure pangalengan, camping pangalengan, rafting pangalengan, arung jeram pangalengan, team building pangalengan, mersi adventure, paket wisata pangalengan, outbound pangalengan, wisata bandung selatan"
       />
       <Navbar />
       <Hero />
