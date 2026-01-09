@@ -63,7 +63,7 @@ const PackagesPage: React.FC = () => {
     <div className="min-h-screen bg-slate-50">
       <Seo 
         title="Paket Wisata Pangalengan - Rafting & Camping | Mersi Adventure"
-        description="Daftar harga paket wisata Pangalengan 2024. Rafting mulai 125rb, Camping mulai 250rb. Pilihan paket outbound corporate dan family gathering."
+        description="Daftar harga paket wisata Pangalengan 2025. Rafting mulai 125rb, Camping mulai 250rb. Pilihan paket outbound corporate dan family gathering."
         path="/packages"
         keywords="harga rafting pangalengan, paket camping pangalengan, paket outbound pangalengan, wisata murah pangalengan"
       />
