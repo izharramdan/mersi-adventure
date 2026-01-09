@@ -11,7 +11,8 @@ interface SeoProps {
 
 const Seo: React.FC<SeoProps> = ({ title, description, canonical, path, keywords }) => {
   const domain = 'https://mersiwisatapangalengan.com';
-  const url = canonical || (path ? `${domain}${path}` : domain);
+  const cleanPath = path?.startsWith('/') ? path : `/${path || ''}`;
+  const url = canonical || (path ? `${domain}${cleanPath}` : domain);
 
   return (
     <Helmet>
