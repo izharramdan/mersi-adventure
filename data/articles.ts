@@ -269,7 +269,7 @@ export const articles = [
         <li>Jangan turunkan kaki saat ATV melaju.</li>
         <li>Jaga jarak dengan ATV di depan.</li>
         <li>Ikuti jalur yang sudah ditentukan oleh pemandu.</li>
-        <li>Bawa baju ganti, karena pasti akan kotor terkena cipratan lumpur.</li>
+        <li>Bawa baju ganti karena pasti akan kotor terkena cipratan lumpur.</li>
       </ul>
     `
   }
