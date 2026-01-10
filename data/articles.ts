@@ -5,6 +5,8 @@ import raftingImg from '../assets/rafting1.jpg';
 import lakeImg from '../assets/perahu.JPG';
 import teaImg from '../assets/off_road1.JPG';
 import travelImg from '../assets/atv1.jpg';
+import outboundImg from '../assets/flying_fox.JPG';
+import atvImg from '../assets/atv2.JPG';
 
 export const articles = [
   {
@@ -199,5 +201,77 @@ export const articles = [
       <h3>4. Nasi Liwet Kastrol</h3>
       <p>Banyak rumah makan di pinggir Situ Cileunca menyediakan paket nasi liwet lengkap dengan ayam goreng, ikan asin, tahu tempe, dan sambal dadak. Makan bersama di atas daun pisang menambah kenikmatan.</p>
     `
+  },
+  {
+    id: 9,
+    title: 'Menikmati Sunrise Ajaib di Cukul Pangalengan',
+    slug: 'sunrise-point-cukul-pangalengan',
+    date: '28 Januari 2025',
+    image: teaImg,
+    excerpt: 'Saksikan keindahan matahari terbit membelah kabut di Sunrise Point Cukul. Spot fotografi lanskap terbaik di Bandung Selatan yang wajib Anda kunjungi.',
+    category: 'Destinasi',
+    content: `
+      <p>Bagi para pemburu matahari terbit, Cukul Sunrise Point adalah surga. Terletak di ketinggian 1.600 mdpl, tempat ini menawarkan panorama kebun teh yang diselimuti kabut tebal di pagi hari, menciptakan efek "negeri di atas awan".</p>
+      
+      <h3>Waktu Terbaik</h3>
+      <p>Usahakan tiba di lokasi sebelum pukul 05.00 WIB. Udara di sini sangat dingin, bisa mencapai 15 derajat Celcius, jadi pastikan Anda memakai jaket tebal dan syal.</p>
+      
+      <h3>Spot Instagramable</h3>
+      <p>Selain pemandangan matahari terbit, ada banyak spot foto buatan yang menarik seperti gardu pandang, sayap burung, dan ayunan langit. Namun, keindahan alami hamparan kebun teh tetap menjadi daya tarik utama.</p>
+      
+      <h3>Akses Menuju Lokasi</h3>
+      <p>Jalan menuju Cukul sudah beraspal mulus, namun berkelok-kelok. Berhati-hatilah saat berkendara di pagi buta karena kabut seringkali menghalangi pandangan.</p>
+    `
+  },
+  {
+    id: 10,
+    title: 'Manfaat Team Building untuk Kekompakan Perusahaan',
+    slug: 'manfaat-team-building-perusahaan',
+    date: '02 Februari 2025',
+    image: outboundImg,
+    excerpt: 'Tingkatkan produktivitas dan kerjasama tim Anda melalui kegiatan outbound seru di alam terbuka. Temukan mengapa Pangalengan adalah lokasi yang tepat.',
+    category: 'Corporate',
+    content: `
+      <p>Rutinitas kantor seringkali membuat jenuh dan menurunkan semangat kerja. Kegiatan Team Building atau Outbound di alam terbuka terbukti ampuh menyegarkan pikiran dan mempererat hubungan antar karyawan.</p>
+      
+      <h3>1. Meningkatkan Komunikasi</h3>
+      <p>Dalam permainan outbound, komunikasi adalah kunci. Peserta dipaksa untuk berinteraksi dan mendengarkan satu sama lain untuk memecahkan masalah bersama.</p>
+      
+      <h3>2. Membangun Kepercayaan</h3>
+      <p>Banyak games outbound yang dirancang untuk membangun rasa percaya (trust) antar anggota tim. Misalnya, permainan "Trust Fall" di mana seseorang harus menjatuhkan diri ke belakang dan ditangkap oleh rekannya.</p>
+      
+      <h3>3. Melatih Leadership</h3>
+      <p>Setiap kelompok pasti membutuhkan pemimpin. Di sini, jiwa kepemimpinan seseorang akan terlihat dan terasah saat harus mengambil keputusan cepat dan tepat.</p>
+      
+      <h3>Kenapa Pangalengan?</h3>
+      <p>Pangalengan memiliki fasilitas lengkap untuk outbound, mulai dari lapangan luas, flying fox, paintball, hingga rafting. Udaranya yang sejuk juga membuat aktivitas fisik tidak terasa melelahkan.</p>
+    `
+  },
+  {
+    id: 11,
+    title: 'Keseruan ATV Adventure Menembus Kebun Teh',
+    slug: 'atv-adventure-pangalengan',
+    date: '05 Februari 2025',
+    image: atvImg,
+    excerpt: 'Pacu adrenalin Anda dengan menunggangi ATV melintasi jalur berbatu dan berlumpur di tengah perkebunan teh yang eksotis. Aktivitas seru untuk semua usia.',
+    category: 'Adventure',
+    content: `
+      <p>Ingin mencoba sensasi offroad tapi ingin menyetir sendiri? ATV (All Terrain Vehicle) Adventure adalah jawabannya. Di Pangalengan, Anda bisa menyewa ATV untuk berkeliling kebun teh dengan trek yang bervariasi.</p>
+      
+      <h3>Pilihan Trek</h3>
+      <p>Terdapat beberapa pilihan trek, mulai dari "Fun Track" yang santai dan datar untuk pemula atau keluarga, hingga "Extreme Track" yang penuh tanjakan curam, turunan tajam, dan kubangan lumpur.</p>
+      
+      <h3>Keamanan Terjamin</h3>
+      <p>Setiap peserta akan dilengkapi dengan helm dan boots. Sebelum berangkat, instruktur akan memberikan briefing singkat tentang cara mengoperasikan ATV (gas, rem, dan posisi badan).</p>
+      
+      <h3>Tips Bermain ATV</h3>
+      <ul>
+        <li>Jangan turunkan kaki saat ATV melaju.</li>
+        <li>Jaga jarak dengan ATV di depan.</li>
+        <li>Ikuti jalur yang sudah ditentukan oleh pemandu.</li>
+        <li>Bawa baju ganti, karena pasti akan kotor terkena cipratan lumpur.</li>
+      </ul>
+    `
   }
 ];
+
