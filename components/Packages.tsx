@@ -25,7 +25,7 @@ const PACKAGES: Package[] = [
   {
     id: 'p1',
     title: 'Arum Jeram Rafting',
-    price: '175.000',
+    price: '150.000',
     unit: '/ orang',
     category: 'Wisata Air',
     image: raftingImg,
@@ -44,12 +44,12 @@ const PACKAGES: Package[] = [
   },
   {
     id: 'p3',
-    title: 'Fun Offroad',
-    price: '1.850.000',
-    unit: '/ unit (7 pax)',
+    title: 'Offroad Jimny',
+    price: '200.000',
+    unit: '/ orang (Min. 5)',
     category: 'Offroad',
     image: offroadImg,
-    desc: 'Menjelajahi kebun teh Malabar dengan unit Land Rover legendaris.',
+    desc: 'Menjelajahi kebun teh Malabar dengan sensasi petualangan offroad Jimny.',
     spots: ['Kebun Teh Malabar', 'Wayang Windu', 'Situ Cileunca']
   },
   {
