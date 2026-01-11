@@ -14,11 +14,13 @@ const BlogDetailPage: React.FC = () => {
   const article = articles.find((a) => a.slug === slug);
   
   // Randomly select 3 related articles (excluding current one)
-  const relatedArticles = articles
-    .filter((a) => a.slug !== slug)
-    // Simple shuffle
-    .sort(() => 0.5 - Math.random()) 
-    .slice(0, 3);
+  const relatedArticles = React.useMemo(() => {
+    return articles
+      .filter((a) => a.slug !== slug)
+      // Simple shuffle
+      .sort(() => 0.5 - Math.random()) 
+      .slice(0, 3);
+  }, [slug]);
 
   // Calculate read time & handle scroll progress
   useEffect(() => {
