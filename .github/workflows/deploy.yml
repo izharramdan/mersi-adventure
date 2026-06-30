@@ -2,8 +2,8 @@ name: Deploy React to cPanel
 on:
   push:
     branches:
-      - main  # Ganti dengan 'master' jika branch utama Anda di GitHub adalah master
-  workflow_dispatch: # Fitur tambahan agar Anda bisa klik "Run workflow" secara manual lewat tab Actions
+      - main
+  workflow_dispatch:
 
 jobs:
   FTP-Deploy-Action:
@@ -23,7 +23,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/
-        server-dir: ./                 # PERBAIKAN: Ubah menjadi ./ karena akun FTP Anda sudah berada di folder tujuan
+        local-dir: ./dist/              
+        server-dir: ./                 # Menggunakan ./ karena akun FTP Anda sudah dilempar langsung ke folder 'user'
         port: 21
         protocol: ftp
