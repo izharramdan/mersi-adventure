@@ -23,7 +23,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/              # Jika nanti error "dir ./dist/ does not exist", ganti menjadi ./build/
-        server-dir: ./public_html/      # PERBAIKAN: File langsung masuk ke folder utama website Anda
+        local-dir: ./dist/
+        server-dir: ./                 # PERBAIKAN: Ubah menjadi ./ karena akun FTP Anda sudah berada di folder tujuan
         port: 21
         protocol: ftp
