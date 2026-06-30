@@ -15,7 +15,7 @@ const BlogPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <Seo 
+      <Seo
         title="Blog Wisata Pangalengan | Artikel Terbaru Mersi Adventure"
         description="Kumpulan artikel menarik seputar wisata Pangalengan, tips rafting, camping guide, dan rekomendasi kuliner. Dapatkan inspirasi liburan Anda di sini."
         path="/blog"
@@ -48,14 +48,14 @@ const BlogPage: React.FC = () => {
                       {article.category}
                     </span>
                   </div>
-                  <img 
-                    src={article.image} 
-                    alt={article.title} 
+                  <img
+                    src={article.image}
+                    alt={article.title}
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
-                
+
                 <div className="p-8 flex flex-col flex-grow">
                   <div className="flex items-center gap-4 text-emerald-900/40 text-sm font-bold mb-4">
                     <div className="flex items-center gap-2">
@@ -63,15 +63,15 @@ const BlogPage: React.FC = () => {
                       <span>{article.date}</span>
                     </div>
                   </div>
-                  
+
                   <h3 className="text-2xl font-black text-emerald-950 mb-4 leading-tight group-hover:text-emerald-600 transition-colors">
                     {article.title}
                   </h3>
-                  
+
                   <p className="text-emerald-900/60 mb-6 line-clamp-3">
                     {article.excerpt}
                   </p>
-                  
+
                   <div className="mt-auto pt-6 border-t border-emerald-50">
                     <Link to={`/blog/${article.slug}`} className="inline-flex items-center gap-2 text-orange-600 font-black tracking-wide uppercase text-sm hover:gap-4 transition-all">
                       Baca Selengkapnya
