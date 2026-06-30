@@ -2,7 +2,8 @@ name: Deploy React to cPanel
 on:
   push:
     branches:
-      - main  # Ganti dengan 'master' jika branch utama Anda master
+      - main
+  workflow_dispatch:
 
 jobs:
   FTP-Deploy-Action:
@@ -22,5 +23,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./dist/ # PENTING: Cek folder build Anda. Vite pakai './dist/', CRA pakai './build/'
-        server-dir: ./ # ini cukup
+        local-dir: ./dist/              
+        server-dir: ./                 # Menggunakan ./ karena akun 'deployer' sudah otomatis mengunci ke public_html
+        port: 21
+        protocol: ftp
