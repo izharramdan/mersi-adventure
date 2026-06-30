@@ -24,6 +24,6 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./dist/              
-        server-dir: ./                 # Menggunakan ./ karena akun FTP Anda sudah dilempar langsung ke folder 'user'
+        server-dir: ./                 # Menggunakan ./ karena akun 'deployer' sudah otomatis mengunci ke public_html
         port: 21
         protocol: ftp
